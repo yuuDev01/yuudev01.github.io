@@ -5,29 +5,78 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    ul{
-      padding-left: 0px;
-      list-style: none;
-    }
-    ul >li {
-      float: left;
-      padding : 5px;
-      background-color: orange;
-      color: white;
-    }
-    ul >li:hover{
-      background-color: orangered;
-      color: black;
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <ul>
-    <li>menu1</li>
-    <li>menu2</li>
-    <li>menu3</li>
-    <li>menu4</li>
-  </ul>
+  <header>
+    <div class="uppermenu clearfix">
+      <span>로그인</span><span>|</span><span>회원가입</span>
+    </div>
+    <div class="header container"></div>
+  </header>
+  <nav>
+    <div class="mainmenu container">
+      <div class="mainmunuin">
+        <ul class="clearfix">
+          <li><a href="#">웹표준</a></li>
+          <li><a href="#">자바</a></li>
+          <li><a href="#">안드로이드</a></li>
+          <li><a href="#">데이터베이스</a></li>
+          <li><a href="#">스프링</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="container clearfix">
+      <aside>
+        <div class="aside"></div>
+      </aside>
+      <section>
+        <div class="join"><h3>회원가입</h3></div>
+        <div class="content">
+          <ul>
+            <form>
+              <li><label for="user_id">아이디</label></li>
+              <li><input type="text" id="user_id"></li>
+              <li><label for="user_pwd">비밀번호</label></li>
+              <li><input type="password" id="user_pwd"></li>
+              <li><label for="user_repwd">비밀번호확인</label></li>
+              <li><input type="password" id="user_repwd"></li>
+              <li><label for="user_phone">전화번호</label></li>
+              <li><input type="text" id="user_phone"></li>
+              <li><label for="user_name">별칭</label></li>
+              <li><input type="text" id="user_name"></li>
+              <li><label for="user_nation">지역</label></li>
+              <li><select name="" id="user_nation">
+                  <option value="1">==선택==</option>
+                  <option value="2">서울</option>
+                  <option value="3">부산</option>
+                  <option value="4">대구</option>
+                  <option value="5">대전</option>
+                  <option value="6">울산</option>
+                </select></li>
+              <li><label for="user_sex">성별</label></li>
+              <li><input type="radio" name="user_sex" value="male">남자
+                <input type="radio" name="user_sex" value="female">여자
+              </li>
+              <li><label for="hobby">취미</label></li>
+              <li><input type="checkbox" value="book">독서
+                <input type="checkbox" value="music">음악감상
+                <input type="checkbox" value="exercise">운동
+                <input type="checkbox" value="game">게임
+              </li>
+              <li><label for="birth">생년월일</label></li>
+              <li><input type="date"></li>
+              <li><button>회원가입</button></li>
+            </form>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="container">
+    copyright by gildong hong. all rights reserved.
+  </footer>
 </body>
 </html>
